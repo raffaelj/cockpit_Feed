@@ -20,8 +20,6 @@ $this->module('feed')->extend([
         else
             $view = 'feed:views/rss.php';
         
-        if (COCKPIT_API_REQUEST) $this->app->response->mime = 'rss';
-        
         return $this->app->view($view, compact('entries', 'collection', 'options'));
         
     },
@@ -52,12 +50,8 @@ $this->module('feed')->extend([
             
         }
         
-        if ($output == 'rss') {
-            
-            if (COCKPIT_API_REQUEST) $this->app->response->mime = 'rss';
-            
+        if ($output == 'rss')
             return $this->app->view('feed:views/listFeeds.php', compact('entries'));
-        }
         
         return $entries;
         

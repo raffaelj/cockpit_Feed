@@ -23,11 +23,15 @@ class RestApi extends \LimeExtra\Controller {
     
     public function get($name = null) {
         
+        $this->app->response->mime = 'rss';
         return $this->module('feed')->feed($name);
         
     }
     
     public function listFeeds($output = 'json') {
+        
+        if ($output == 'rss')
+            $this->app->response->mime = 'rss';
         
         return $this->module('feed')->feeds($output);
         

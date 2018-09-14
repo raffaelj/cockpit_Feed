@@ -41,7 +41,7 @@ output: json with all available feeds
         "_id": "dates5b29154a804d0",
         "description": "",
         "url": "https://example.com/cockpit/api/feed/get/dates"
-    }
+    },
     "pages": {
         "name": "pages",
         "label": "Seiten",

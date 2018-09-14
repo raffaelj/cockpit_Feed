@@ -12,14 +12,15 @@ Copy this folder to `addons/Feed`.
 
 ### endpoints
 
-`/api/feed` --> default feed
-`/api/feed/get/collectionname` --> collection feed
-`/api/feed/listFeeds` --> feed of all collections (json)
-`/api/feed/listFeeds/rss` --> feed of all collections (rss)
+* `/api/feed` --> default feed
+* `/api/feed/get/collectionname` --> collection feed
+* `/api/feed/listFeeds` --> feed of all collections (json)
+* `/api/feed/listFeeds/rss` --> feed of all collections (rss)
 
 ### get feed for collection
 
 call `https://url/to/cockpit/feed/get/collectionname?token=xxtokenxx`
+
 public: `https://url/to/cockpit/feed/get/collectionname`
 
 output: RSS Feed
@@ -79,6 +80,7 @@ put a file in `config/feed/collectionname.php` with your custom code
 * [ ] more generic views with `$xml = new DOMDocument('1.0', 'UTF-8');` ...
 * [ ] maybe different rss/atom versions
 * [ ] maybe GUI --> for now, config.yaml works fine
-* [ ] mime error if calling with Lime instead of API - Warning: Creating default object from empty value in E:\github\cockpit\addons\Feed\bootstrap.php on line 23
+* [ ] mime error if calling with Lime instead of API
+  * Warning: Creating default object from empty value in E:\github\cockpit\addons\Feed\bootstrap.php on line 23
   * Workaround: `error_reporting(0);`
 * [ ] ...

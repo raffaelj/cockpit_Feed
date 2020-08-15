@@ -1,6 +1,6 @@
 # Feed Addon for Cockpit
 
-work in progress
+**draft/experimental** - I started enthusiastic, but I never found the time to finish this addon.
 
 RSS Feeds for collections.
 

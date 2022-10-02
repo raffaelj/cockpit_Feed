@@ -1,5 +1,11 @@
 # Feed Addon for Cockpit
 
+**This addon is not compatible with Cockpit CMS v2.**
+
+See also [Cockpit CMS v1 docs](https://v1.getcockpit.com/documentation), [Cockpit CMS v1 repo](https://github.com/agentejo/cockpit) and [Cockpit CMS v2 docs](https://getcockpit.com/documentation/), [Cockpit CMS v2 repo](https://github.com/Cockpit-HQ/Cockpit).
+
+---
+
 **draft/experimental** - I started enthusiastic, but I never found the time to finish this addon.
 
 RSS Feeds for collections.
